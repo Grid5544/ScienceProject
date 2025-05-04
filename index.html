@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Quiz Battle Arena</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div id="game-container">
+    <div id="stats-panel">
+      <h2>Player</h2>
+      <div id="player-sprite"><img src="assets/player.png" alt="Player" /></div>
+      <div id="player-stats">
+        <p>Lives: <span id="player-lives">3</span></p>
+        <p>HP: <span id="player-hp">100</span></p>
+        <p>Attack: <span id="player-atk">10</span></p>
+        <p>Defense: <span id="player-def">5</span></p>
+        <p>Stat Points: <span id="stat-points">0</span></p>
+        <div id="upgrade-buttons">
+          <button onclick="upgradeStat('atk')">+ Attack</button>
+          <button onclick="upgradeStat('def')">+ Defense</button>
+          <button onclick="upgradeStat('hp')">+ Max HP</button>
+        </div>
+      </div>
+    </div>
+
+    <div id="battlefield">
+      <h1>Quiz Battle Arena</h1>
+      <div id="sprites">
+        <img id="player-img" src="assets/player.png" alt="Player" />
+        <img id="monster-img" src="assets/monster.png" alt="Monster" />
+      </div>
+      <div id="question"></div>
+      <div id="answers"></div>
+      <div id="result"></div>
+    </div>
+
+    <div id="monster-panel">
+      <h2>Monster</h2>
+      <div id="monster-sprite"><img src="assets/monster.png" alt="Monster" /></div>
+      <div id="monster-stats">
+        <p>Name: <span id="monster-name">Blob</span></p>
+        <p>HP: <span id="monster-hp">50</span></p>
+        <p>Attack: <span id="monster-atk">5</span></p>
+        <p>Level: <span id="monster-level">1</span></p>
+      </div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
